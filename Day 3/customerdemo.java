@@ -4,5 +4,6 @@ public class CustomerDemo{
         co.setid(101);
         co.setname("lavi");
         co.setcity("chennai");
+        System.out.println(co);
     }
 }
