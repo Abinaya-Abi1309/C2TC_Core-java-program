@@ -1,4 +1,4 @@
-public class PrimitiveDataTypesDemo {
+public class PrimitiveDataType {
     public static void main(String[] args) {
 
         // byte takes 1 byte
