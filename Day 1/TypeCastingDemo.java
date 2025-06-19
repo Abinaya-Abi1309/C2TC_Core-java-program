@@ -29,7 +29,7 @@ public class TypeCastingDemo {
         long l = (long) f1; // double to long (decimal truncated)
         System.out.println("double to long: " + l);
 
-        long l1 = 9233720368547758061l1;
+        long l1 = 92337203676467l;
         int i2 = (int) l1; // long to int (overflow occurs)
         System.out.println("long to int (with overflow): " + i2);
 

@@ -1,4 +1,4 @@
-public class Decision MakingWithOperators {
+public class DecisionMakingWithOperators {
 public static void main(String[]args) {
 int x = 8, y = 7;
 int a = 10;
@@ -9,7 +9,7 @@ System.out.println("true");
 else {
 System.out.println("false");
 }
-if (!(ab) || (a == b)) {
+if (!(a<b) || (a == b)) {
 System.out.println("Condition is TRUE");
 } else
 {

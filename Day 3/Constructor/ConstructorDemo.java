@@ -33,7 +33,7 @@ class Customer {
     }
 
     // toString method to display customer info
-    public String toString() {
+    public String toString(){
         return "Customer ID: " + id + "\nCustomer Name: " + name + "\nCustomer City: " + city + "\n";
     }
 }
