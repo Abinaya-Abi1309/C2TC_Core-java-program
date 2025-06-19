@@ -32,51 +32,51 @@ class Customer {
         this.city = city;
     }
 
-    // toString method to display customer info
-    public String String(){
+    // Corrected toString method
+    @Override
+    public String toString() {
         return "Customer ID: " + id + "\nCustomer Name: " + name + "\nCustomer City: " + city + "\n";
     }
 }
 
 public class ConstructorDemo {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        String name, city;
-        int id;
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            String name, city;
+            int id;
 
-        // First customer using default constructor
-        System.out.print("Enter Customer Id : ");
-        id = sc.nextInt();
-        sc.nextLine();
+            // First customer using default constructor
+            System.out.print("Enter Customer Id : ");
+            id = sc.nextInt();
+            sc.nextLine();
 
-        System.out.print("Enter Customer Name : ");
-        name = sc.nextLine();
+            System.out.print("Enter Customer Name : ");
+            name = sc.nextLine();
 
-        System.out.print("Enter Customer City : ");
-        city = sc.nextLine();
+            System.out.print("Enter Customer City : ");
+            city = sc.nextLine();
 
-        System.out.println();
+            System.out.println();
 
-        Customer c1 = new Customer(); // default constructor invoked
-        c1.setCustomerName(name);
-        c1.setCustomerId(id);
-        c1.setCustomerCity(city);
-        System.out.println("Customer 1 Details:\n" + c1);
+            Customer c1 = new Customer(); // default constructor invoked
+            c1.setCustomerName(name);
+            c1.setCustomerId(id);
+            c1.setCustomerCity(city);
+            System.out.println("Customer 1 Details:\n" + c1);
 
-        // Second customer using parameterized constructor
-        System.out.print("Enter Customer Id : ");
-        id = sc.nextInt();
-        sc.nextLine();
+            // Second customer using parameterized constructor
+            System.out.print("Enter Customer Id : ");
+            id = sc.nextInt();
+            sc.nextLine();
 
-        System.out.print("Enter Customer Name : ");
-        name = sc.nextLine();
+            System.out.print("Enter Customer Name : ");
+            name = sc.nextLine();
 
-        System.out.print("Enter Customer City : ");
-        city = sc.nextLine();
+            System.out.print("Enter Customer City : ");
+            city = sc.nextLine();
 
-        Customer c2 = new Customer(name, id, city); // parameterized constructor invoked
-        System.out.println("Customer 2 Details:\n" + c2);
-
-        sc.close();
+            Customer c2 = new Customer(name, id, city); // parameterized constructor invoked
+            System.out.println("Customer 2 Details:\n" + c2);
+        }
     }
 }
