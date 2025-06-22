@@ -1,56 +1,46 @@
-package com.tnsif.dayfive.association.hasa;
+////Program to demonstrate Hierarchical Inheritance - Student Class
+package com.tnsif.dayfive.hierarchicalinheritance;
 
-//Contained class
-public class Address {
-
-        private String street;
-        private String city;
-        private String state;
-        private String postalCode;
-
-        // Constructor
-        public Address() {
-                super();
-
+public class Student extends Person
+{
+        private String clas;
+        private float per;
+        public Student() {
+                System.out.println("Student class default constructor");
+                clas="FY";
+                per=70;
+        }
+        public Student(String clas, float per) {
+                this.clas = clas;
+                this.per = per;
         }
 
-        public Address(String street, String city, String state, String postalCode) {
-                super();
-                this.street = street;
-                this.city = city;
-                this.state = state;
-                this.postalCode = postalCode;
+        public String getClas() {
+                return clas;
+        }
+        public void setClas(String clas) {
+                this.clas = clas;
+        }
+        public float getPer() {
+                return per;
+        }
+        public void setPer(float per) {
+                this.per = per;
+        }
+        public Student(String name, String city,String clas, float per )
+        {
+                //private members can't inherited into child class
+                /*
+                 * super.name=name; super.city=city;
+                 */
+                super(name,city);
+                this.clas = clas;
+                this.per = per;
+        }
+        @Override
+        public String toString() {
+                return "Student [clas=" + clas + ", per=" + per + ", getName()=" + getName() + ", getCity()=" + getCity() + "]";
         }
 
-        // getter/setter methods
-        public String getStreet() {
-                return street;
-        }
 
-        public void setStreet(String street) {
-                this.street = street;
-        }
-
-        public String getCity() {
-                return city;
-        }
-
-        public void setCity(String city) {
-                this.city = city;
-        }
-
-        public String getState() {
-                return state;
-        }
-
-        public void setState(String state) {
-                this.state = state;
-        }
-
-        public String getPostalCode() {
-                return postalCode;
-        }
-
-        public void setPostalCode(String postalCode) {
-                this.postalCode = postalCode;
-        }
+}
