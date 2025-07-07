@@ -1,5 +1,5 @@
 //Program to demonstrate static block
-package com.tnsif.daysix.staticblockmethod;
+package com.tnsif.daysix.Staticblockmethod;
 public class MyClass {
         private int section ; //non-static or instance variable
         private static int srNo; //static or class variable

@@ -1,4 +1,4 @@
-package com.tnsif.dayfive.association.hasa;
+package com.tnsif.dayfive.Association.hasa;
 
 //Contained class
 public class Address {
@@ -54,3 +54,4 @@ public class Address {
         public void setPostalCode(String postalCode) {
                 this.postalCode = postalCode;
         }
+}

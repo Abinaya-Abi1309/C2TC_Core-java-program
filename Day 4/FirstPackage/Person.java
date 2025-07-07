@@ -1,7 +1,7 @@
 ////
 // Program to demonstrate private data members,
 // Constructors and getter and setter methods
-package com.tnsif.dayfour.firstpackage;
+package com.tnsif.dayfour.FirstPackage;
 
 public class Person {
     private String personName;
@@ -41,5 +41,12 @@ public class Person {
         this.personName = personName;
         this.personAge = personAge;
         this.personCity = personCity;
+    }
+
+    public void setAGE(int age) {
+    }
+
+    public void displayInfo() {
+
     }
 }

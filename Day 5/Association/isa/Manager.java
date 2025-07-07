@@ -1,4 +1,4 @@
-package com.tnsif.dayfive.association.isa;
+package com.tnsif.dayfive.Association.isa;
 
 //Subclass inheriting from Employee
 public class Manager extends Employee {

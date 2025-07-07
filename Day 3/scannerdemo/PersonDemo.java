@@ -22,8 +22,8 @@ public class PersonDemo {
         int income = ob.nextInt();
 
         //Person object and initialize values using setter
-        Person person = new Person();
-        person.setNAME(name);
+        com.tnsif.dayfour.firstpackage.Person person = new Person();
+        ((Person) person).setNAME(name);
         person.setAGE(age);
         person.setGENDER(gender);
         person.setINCOME(income);

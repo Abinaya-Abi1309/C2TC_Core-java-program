@@ -1,5 +1,7 @@
 // Program to demonstrate usage of the "HAS-A" relationship
-package com.tnsif.dayfive.association.hasa;
+package com.tnsif.dayfive.Association.hasa;
+
+import com.tnsif.dayfour.FirstPackage.Person;
 
 public class Exceutor {
 

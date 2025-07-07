@@ -1,5 +1,5 @@
 // Usage of the "IS-A" relationship 
-package com.tnsif.dayfive.association.isa;
+package com.tnsif.dayfive.Association.isa;
 
 public class IsADemo {
         public static void main(String[] args) {

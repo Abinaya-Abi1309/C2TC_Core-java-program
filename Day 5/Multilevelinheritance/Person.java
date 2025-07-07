@@ -1,5 +1,5 @@
 //Program to define base class Person
-package com.tnsif.dayfive.multilevelinheritance;
+package com.tnsif.dayfive.Multilevelinheritance;
 
 import java.util.Date;
 
